@@ -1,0 +1,628 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="logo1">
+            <a href="#" class="logo">CLYDE</a>
+        </div>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#service">Services</a>
+            <a href="#project">Projects</a>
+            <a href="#blog">Bolgs</a>
+            <a href="#contact">Contact</a>
+
+
+
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="hexagon"></div>
+        <div style="display: flex;">
+            <div class="content">
+                <h2 style="color: black;">Creative <strong style="color: rgb(53, 53, 54);">UI/UX</strong> Designer & Developer</h2>
+                <a class="dow" href="#">Hire me</a>
+                <a class="cv" style="cursor: pointer;" href="#">Download CV</a>
+            </div>
+            <div class="content">
+                <img src="sta.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section style="background-color: rgb(230, 228, 225); padding: 7%;">
+        <div class="client">
+            <div class="total">
+                <img src="logo" alt="">
+                <h2 class="counter" data-target="750">0</h2>
+                <p style="color: rgb(109, 111, 112);">PROJECT COMPLETE</p>
+            </div>
+            <div>
+                <img src="logo" alt="">
+                <h2 class="counter" data-target="568">0</h2>
+                <p style="color: rgb(109, 111, 112);">HAPPY CLIENTS</p>
+            </div>
+            <div>
+                <img src="logo" alt="">
+                <h2 class="counter" data-target="478">0</h2>
+                <p style="color: rgb(109, 111, 112);">CUPS OF COFFEE</p>
+            </div>
+            <div>
+                <img src="logo" alt="">
+                <h2 class="counter" data-target="780">0</h2>
+                <p style="color: rgb(109, 111, 112);">YEARS EXPERIENCE</p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // JavaScript for Counter Animation
+        const counters = document.querySelectorAll('.counter');
+    
+        counters.forEach(counter => {
+            const updateCounter = () => {
+                const target = +counter.getAttribute('data-target');
+                const current = +counter.innerText;
+    
+                const increment = target / 200; // Adjust the speed by changing the denominator
+    
+                if (current < target) {
+                    counter.innerText = Math.ceil(current + increment);
+                    setTimeout(updateCounter, 10); // Adjust the timing by changing the delay
+                } else {
+                    counter.innerText = target; // Ensure it stops at the target
+                }
+            };
+    
+            updateCounter();
+        });
+    </script>
+    
+    <section class="about" id="about">
+        <div class="info">
+            <div class="image">
+                <img style="width: 450px; " src="abt.webp" alt="" >
+            </div>
+            <div class="aboutme" >
+                <p style="color: rgb(109, 111, 112);">MY INTRO</p>
+                <h1>About Me</h1>
+                <p>A small river nmed Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <ul class="no-bullets" style="margin-top: 9%; line-height: 2;">
+                    <li>
+                        <span><b>Name:</b></span>
+                        <span style="color: rgb(109, 111, 112); margin-left: 13%;">Clyde Noitzki</span>
+                    </li>
+
+                    <li>
+                        <span><b>Date of birth:</b></span>
+                        <span style="color: rgb(109, 111, 112); margin-left: 3%;">January 01,1990</span>
+                    </li>
+
+                    <li>
+                        <span><b>Address:</b></span>
+                        <span style="color: rgb(109, 111, 112); margin-left: 10%;">San Francisco CA 97987 USA</span>
+                    </li>
+                    <li>
+                        <span><b>Zip code:</b></span>
+                        <span style="color: rgb(109, 111, 112); margin-left: 10%;">1000</span>
+                    </li>
+                    <li>
+                        <span><b>Email:</b></span>
+                        <span style="color: rgb(109, 111, 112); margin-left: 15%;">Clydenowitzki@gmail.com</span>
+                    </li>
+                    <li>
+                        <span><b>Phone:</b></span>
+                        <span style="color: rgb(109, 111, 112); margin-left: 14%;">+223456789-0</span>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color:  rgb(230, 228, 225); padding-bottom: 13%; " id="skill">
+        <div style="text-align: center;  ">
+            <h5 style="color: rgb(109, 111, 112);padding-top: 8.5%;">SKILLS</h5>
+            <h1>My Skills</h1>
+            <p style="color: rgb(109, 111, 112);">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <div class="radial-bars">
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="text">Creativity</div>
+                    <div class="percentage">90%</div>
+                </div>
+                <div class="radial-bar" >
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">65%</div>
+                    <div class="text">Communication</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="text">problem solving</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="text">problem solving</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">75%</div>
+                    <div class="text">problem solving</div>
+                </div>
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">85%</div>
+                    <div class="text">Team work</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section >
+        <div class="sh" id="service">
+        <h6 style="color: rgb(100, 100, 99);">I AM GRANT AT</h6>
+        <h1>We do awesome services for our clients</h1>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+        </div>
+        <div class="grats">
+            <div class="at">
+                <img src="" alt="">
+                <h5>Web Design</h5>
+                <p>A small river named duden flo by theiir plce and upplie</p>
+            </div>
+            <div class="at">
+                <img src="" alt="">
+                <h5>Web application</h5>
+                <p>A small river named duden flo by theiir plce and upplie</p>
+            </div>
+            <div class="at">
+                <img src="" alt="">
+                <h5>Web development</h5>
+                <p>A small river named duden flo by theiir plce and upplie</p>
+            </div>
+            <div class="at">
+                <img src="" alt="">
+                <h5>Web banner</h5>
+                <p>A small river named duden flo by theiir plce and upplie</p>
+            </div>
+        </div>
+        <div class="grat">
+            <div class="at">
+                <img src="" alt="">
+                <h5>branding</h5>
+                <p>A small river named duden flo by theiir plce and upplie</p>
+            </div>
+            <div class="at">
+                <img src="" alt="">
+                <h5>icon</h5>
+                <p>A small river named duden flo by theiir plce and upplie</p>
+            </div>
+            <div class="at">
+                <img src="" alt="">
+                <h5>graphic deign</h5>
+                <p>A small river named duden flo by theiir plce and upplie</p>
+            </div>
+            <div class="at">
+                <img src="" alt="">
+                <h5>bgh</h5>
+                <p>A small river named duden flo by theiir plce and upplie</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding-top: 13%;" >
+        <div class="project">
+            <div class="description">
+                <h1>Have a project on your mind.</h1>
+                <p>A small river named Duden flows b their place and supplies it with the necessaery regelialia. it is a paradisematic country, in which rosted parts of sentences fly. </p>
+                <button>Contact me</button>
+            </div>
+            <div><img style="width: 300px; height: 300px;" src="av.png" alt=""></div>
+        </div>
+    </section>
+
+    <section class="acc" style="text-align: center; padding-bottom: 10%;" id="project">
+        <div  style="padding-top: 8%; padding-bottom: 5%;">
+            <h5 style="color: rgb(100, 100, 99); ">ACCOMPLISHMENTS</h5>
+            <h1 style="padding: 10px;">Our Projects</h1>
+            <p style="color: rgb(100, 100, 99); ">Far far away, behind the word mountains, far from the countries Vokalia and Comsonantia</p>
+        </div>
+        <!-- <div class="images">
+            <div class="img">
+                <img src="about1.webp" alt="">
+            </div>
+            <div class="img">
+                <img src="about1.webp" alt="">
+            </div>
+            <div class="img">
+                <img src="about1.webp" alt="">
+            </div>
+            <div class="img">
+                <img src="about1.webp" alt="">
+            </div>
+            <div class="img">
+                <img src="about1.webp" alt="">
+            </div>
+            <div class="img">
+                <img src="about1.webp" alt="">
+            </div>
+            <div class="img">
+                <img src="about1.webp" alt="">
+            </div>
+            <div class="img">
+                <img src="about1.webp" alt="">
+            </div>
+        </div> -->
+        <div class="images" >
+            <div class="img">
+                <img src="6.webp" alt="">
+                <div class="hover-text">Branding & lllustration Design <strong>WEB DESIGN</strong></div>
+            </div>
+            <div class="img">
+                <img src="1.jpg" alt="">
+                <div class="hover-text">Branding & lllustration Design <strong>WEB DESIGN</strong></div>
+            </div>
+            <div class="img">
+                <img src="2.jpg" alt="">
+                <div class="hover-text">Branding & lllustration Design <strong>WEB DESIGN</strong></div>
+            </div>
+            <div class="img">
+                <img src="3.jpg" alt="">
+                <div class="hover-text">Branding & lllustration Design <strong>WEB DESIGN</strong></div>
+            </div>
+            <div class="img">
+                <img src="4.jpg" alt="">
+                <div class="hover-text">Branding & lllustration Design <strong>WEB DESIGN</strong></div>
+            </div>
+            <div class="img">
+                <img src="about1.webp" alt="">
+                <div class="hover-text">Branding & lllustration Design <strong>WEB DESIGN</strong></div>
+            </div>
+            <div class="img">
+                <img src="abt.webp" alt="">
+                <div class="hover-text">Branding & lllustration Design <strong>WEB DESIGN</strong></div>
+            </div>
+            <div class="img">
+                <img src="av.png" alt="">
+                <div class="hover-text">Branding & lllustration Design <strong>WEB DESIGN</strong></div>
+            </div>
+        </div>
+    </section>
+    <section >
+        <div class="testimonie">
+            <div class="des">
+                <h5>TESTIMONIES</h5>
+                <h1 style="padding: 20px;">What client says about?</h1>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            </div>
+            <div class="testimonial-slider-container" style="margin-left: 5%;">
+                <div class="testimonial-slider">
+                  <div class="testimonial">
+                   
+                    <p>"This product has changed my life for the better. Highly recommended!"</p>
+                    <div style="display: flex;">
+                        <div class="im">
+                    <img src="abt.webp" alt="Jane Smith">
+                </div>
+                <div class="im">
+                    <h4 >- Jane Smith</h4>
+                </div>
+            </div>
+                  </div>
+        
+                  <div class="testimonial">
+                   
+                    <p>"Excellent customer service and an amazing experience overall."</p>
+                    <div style="display: flex;">
+                        <div class="im">
+                    <img src="about.webp" alt="Jane Smith">
+                </div>
+                <div class="im">
+                    <h4 >- Jane Smith</h4>
+                </div>
+            </div>
+                  </div>
+                  <div class="testimonial">
+                  
+                    <p>"The quality is unmatched, and the delivery was very prompt."</p>
+                     <div style="display: flex;">
+                        <div class="im">
+                    <img src="sta.png" alt="Jane Smith">
+                </div>
+                <div class="im">
+                    <h4 >- Jane Smith</h4>
+                </div>
+            </div>
+                  </div>
+        
+                  <div class="testimonial">
+                    
+                    <p>"I've never been so satisfied with a purchase before. Great job!"</p>
+                    <div style="display: flex;">
+                        <div class="im">
+                    <img src="av.png" alt="Jane Smith">
+                </div>
+                <div class="im">
+                    <h4 >- Jane Smith</h4>
+                </div>
+            </div>
+                  </div>
+                  <div class="testimonial">
+                    
+                    <p>"A wonderful experience from start to finish. Highly appreciated!"</p>
+                    <div style="display: flex;">
+                        <div class="im">
+                    <img src="about1.webp" alt="Jane Smith">
+                </div>
+                <div class="im">
+                    <h4 >- Jane Smith</h4>
+                </div>
+            </div>
+                  </div>
+                  <div class="testimonial">
+                    
+                    <p>"Absolutely fantastic! Would recommend to anyone looking for quality."</p>
+                    <div style="display: flex;">
+                        <div class="im">
+                    <img src="lady.jpeg" alt="Jane Smith">
+                </div>
+                <div class="im">
+                    <h4 >- Jane Smith</h4>
+                </div>
+            </div>
+                  </div>
+                </div>
+                <div class="dots-container"></div>
+              </div>
+
+        </div>
+    </section>
+
+    <section style="background-color: rgb(221, 221, 221); padding-bottom: 10%;" id="blog">
+        <div style="text-align: center; padding-top: 10%; padding-bottom: 5%;">
+        <h5 style="color: rgb(100, 101, 102);">BLOG</h5>
+        <h1 style="padding: 20px;">Our Blog</h1>
+        <p style="color: rgb(100, 101, 102);">Far far away, behind the word mountains, far from the countries Vokaliaand Consonantia</p>
+        </div>
+        <div class="blog">
+            <div class="fea">
+                <img src="1.jpg" alt="">
+                <div id="des">
+                    <p>JULY 03, 2020 ADMIN 3</p>
+                    <h1 >Why Lead Generation is key for Business Growth</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessry regelialia.</p>
+                </div>
+            </div>
+            <div class="fea">
+                <img src="2.jpg" alt="">
+                <div id="des">
+                    <p>JULY 03, 2020 ADMIN 3</p>
+                    <h1>Why Lead Generation is key for Business Growth</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessry regelialia.</p>
+                </div>
+            </div>
+            <div class="fea">
+                <img src="4.jpg" alt="">
+                <div id="des">
+                    <p>JULY 03, 2020 ADMIN 3</p>
+                    <h1>Why Lead Generation is key for Business Growth</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessry regelialia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #f9f9f9; padding: 5% 10%;" id="contact">
+        <div style="text-align: center; padding-bottom: 3%;">
+            <h6 style="color: #6c757d; font-size: 18px; text-transform: uppercase; letter-spacing: 2px;">Contact Us</h6>
+            <h1 style="padding: 10px; font-size: 36px; font-weight: bold;">Have a Project?</h1>
+            <p style="color: #6c757d; font-size: 16px; max-width: 600px; margin: 0 auto;">
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.
+            </p>
+        </div>
+        <section class="contact" id="contact" >
+            <form class="cot" style="width: 300px;">
+                <div style="display: flex; gap: 5%;">                
+                    <input type="text" id="name" placeholder=" Name">               
+                    <input type="text" id="email" placeholder="Email"><br><br>
+                </div>
+                    <input type="text" id="email" placeholder="Subject"><br><br>
+            
+                <textarea id="message" placeholder="Enter your message"></textarea><br><br>
+                
+                <button class="btn">Submit</button>
+            </form>
+
+
+            
+<div class="name form-right">
+    <div class="abt" style="line-height: 30px; ">
+        <div class="log">
+            <img src="about1.webp" alt="Address Icon">
+            <div >
+                <p class="label">Address:</p>
+                <p>198 West 21th Street, Suite 721, New York NY 10016</p>
+            </div>
+        </div>
+        <div class="log" style="padding-top: 10%; padding-bottom: 10%;">
+            <img src="about1.webp" alt="Phone Icon">
+            <div>
+                <p class="label">Phone:</p>
+                <p>+1235 2355 98</p>
+            </div>
+        </div>
+        <div class="log">
+            <img src="about1.webp" alt="Email Icon">
+            <div>
+                <p class="label">Email:</p>
+                <p>example@example.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+
+    </section> 
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h4>Let's Talk About</h4>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <button><a href="#">Learn More</a></button>
+                
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About </a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Business Strategy</a></li>
+                    <li><a href="#">Data Analysis</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Have a Question?</h4>
+                <p>203 Fake St.Mountain View, San Francisco, California, USA</p>
+                <p>+2 392 3929 210</p>
+                <p>info@yourdomain.com</p>
+            </div>
+        </div>
+    </footer>
+   
+    
+</body>
+</html>
+<script>
+    document.addEventListener("scroll", () => {
+    const header = document.getElementById("header");
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const bars = document.querySelectorAll(".radial-bar");
+
+  bars.forEach((bar) => {
+    const percentage = parseInt(bar.querySelector(".percentage").textContent);
+    const path = bar.querySelector(".path");
+
+    // Calculate the stroke-dashoffset value
+    const dashArray = 502; // Circumference of the circle (2 * π * r)
+    const offset = dashArray - (dashArray * percentage) / 100;
+
+    // Apply the offset value to the stroke-dashoffset property
+    path.style.strokeDashoffset = offset;
+  });
+});
+
+
+const slider = document.querySelector('.testimonial-slider');
+const testimonials = document.querySelectorAll('.testimonial');
+const dotsContainer = document.querySelector('.dots-container');
+const totalTestimonials = testimonials.length;
+const testimonialsPerSlide = 3; // Number of testimonials visible at a time
+let currentIndex = 0;
+
+// Create dots dynamically for each testimonial
+testimonials.forEach((_, index) => {
+  const dot = document.createElement('div');
+  dot.classList.add('dot');
+  if (index === 0) dot.classList.add('active'); // Set the first dot as active
+  dot.addEventListener('click', () => goToTestimonial(index));
+  dotsContainer.appendChild(dot);
+});
+
+// Update the slider position and dots
+function updateSlider() {
+  const offset = currentIndex * -100; // Each testimonial occupies 100% of its container
+  slider.style.transform = `translateX(${offset / testimonialsPerSlide}%)`;
+
+  // Update active dot
+  document.querySelectorAll('.dot').forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentIndex);
+  });
+}
+
+// Go to a specific testimonial
+function goToTestimonial(index) {
+  currentIndex = index;
+  updateSlider();
+}
+
+// Auto-slide functionality
+function autoSlide() {
+  currentIndex++;
+  if (currentIndex >= totalTestimonials) {
+    currentIndex = 0; // Loop back to the first testimonial
+  }
+  updateSlider();
+}
+
+// Auto-slide every 3 seconds
+let interval = setInterval(autoSlide, 2000);
+
+// Pause auto-slide on hover
+slider.parentElement.addEventListener('mouseenter', () => clearInterval(interval));
+slider.parentElement.addEventListener('mouseleave', () => interval = setInterval(autoSlide, 5000));
+
+
+
+document.addEventListener('scroll', function () {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) { // Adjust the scroll distance as needed
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+
+</script>
